@@ -45,7 +45,7 @@ export default function AddProductForm() {
       });
       router.push("/dashboard/product");
     }
-  }, [state, form, toast]);
+  }, [state, form, toast, router]);
 
   return (
     <Form {...form}>

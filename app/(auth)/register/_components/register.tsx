@@ -48,7 +48,7 @@ export default function RegisterForm() {
       });
       form.reset();
     }
-  }, [state, form, toast]);
+  }, [state, form, toast, router]);
 
   return (
     <Form {...form}>

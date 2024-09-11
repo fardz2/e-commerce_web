@@ -56,7 +56,7 @@ export default function LoginForm() {
       }
     }
     console.log("state", state);
-  }, [state, form, toast]);
+  }, [state, form, toast, router]);
 
   return (
     <Form {...form}>
