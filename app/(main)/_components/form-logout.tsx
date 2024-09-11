@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { logout } from "@/server/actions/auth/logout";
 import { useRef } from "react";

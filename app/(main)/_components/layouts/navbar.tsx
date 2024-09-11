@@ -15,7 +15,7 @@ import Cart from "../ui/cart";
 
 import HamburgerTrigger from "../ui/hamburger-trigger";
 import { auth } from "@/auth";
-import FormLogout from "../form-logout";
+
 import DropdownProfile from "../ui/dropdown-profile";
 
 export default async function Navbar() {
