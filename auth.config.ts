@@ -24,7 +24,7 @@ export default { providers: [
         },
       });
       if(user){
-        const isMatch = comparePassword(credentials.password, user.password);
+        const isMatch = comparePassword(credentials.password as string, user.password);
         if (!isMatch) {
             throw new Error("Incorrect password.");
         }
