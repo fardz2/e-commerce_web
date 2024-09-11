@@ -2,7 +2,7 @@ import Credentials from "next-auth/providers/credentials"
 import type { NextAuthConfig } from "next-auth"
 import Google from "next-auth/providers/google"
 import db from "./db";
-import { comparePassword, saltAndHashPassword } from "./lib/password";
+import { comparePassword } from "./lib/password";
 
  
 export default { providers: [
