@@ -23,10 +23,12 @@ export default function FormDeleteProduct({ id }: { id: string }) {
       <AlertDialogTrigger>Delete</AlertDialogTrigger>
       <AlertDialogContent>
         <AlertDialogHeader>
-          <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+          <AlertDialogTitle>
+            Are you want to delete this product
+          </AlertDialogTitle>
           <AlertDialogDescription>
-            This action cannot be undone. This will permanently delete your
-            account and remove your data from our servers.
+            This action cannot be undone. This will permanently delete this
+            product.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
