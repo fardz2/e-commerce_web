@@ -1,6 +1,6 @@
 "use client";
 
-import { CldUploadWidget, CloudinaryUploadWidgetInfo } from "next-cloudinary";
+import { CldUploadWidget } from "next-cloudinary";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Button } from "./button";
