@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import getProduct from "@/service/product/get-product";
+import { getProduct } from "@/service/product/product-service";
 import Link from "next/link";
 import { Suspense } from "react";
 import { columns } from "./_components/columns";

@@ -10,6 +10,9 @@ export const addProductSchema = z.object({
     price : z.string().min(1, {
         message: "Price product is required",
     }), 
+    imageUrl : z.string().min(1, {
+        message: "Image product is required",
+    }),
 
 });
   
