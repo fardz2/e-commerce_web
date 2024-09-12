@@ -1,6 +1,9 @@
 "use client";
 
-import { CldUploadWidget } from "next-cloudinary";
+import {
+  CldUploadWidget,
+  CloudinaryUploadWidgetResults,
+} from "next-cloudinary";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Button } from "./button";
@@ -22,9 +25,9 @@ export default function ImageUpload({
   }, [isMounted]);
 
   if (!isMounted) return null;
-  function onUpload(result: any) {
-    const { secure_url } = result.info;
-    onChange(secure_url as string);
+  function onUpload(result: CloudinaryUploadWidgetResults) {
+    const { secure_url } = result.info as { secure_url: string };
+    onChange(secure_url);
   }
 
   return (
