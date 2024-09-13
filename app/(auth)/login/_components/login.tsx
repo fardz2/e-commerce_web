@@ -38,10 +38,10 @@ export default function LoginForm() {
   });
   useEffect(() => {
     if (state.type === "success") {
+      router.push("/");
       toast({
         description: "Your Login was successful",
       });
-      router.push("/");
     } else if (state.type === "error") {
       toast({
         description: "You have to make account first",

@@ -86,7 +86,7 @@ export const columns: ColumnDef<Product>[] = [
             <Link href="/">
               <DropdownMenuItem>Update</DropdownMenuItem>
             </Link>
-            <DropdownMenuItem>
+            <DropdownMenuItem asChild>
               <FormDeleteProduct id={payment.id} />
             </DropdownMenuItem>
             <DropdownMenuSeparator />

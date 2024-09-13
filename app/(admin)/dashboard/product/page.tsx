@@ -7,7 +7,6 @@ import { DataTable } from "./_components/data-table";
 
 export default async function Page() {
   const product = await getProduct();
-  console.log(product);
   return (
     <>
       <Link href={"/dashboard/product/add-product"}>

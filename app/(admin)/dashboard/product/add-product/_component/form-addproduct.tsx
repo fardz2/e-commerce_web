@@ -43,10 +43,10 @@ export default function AddProductForm() {
 
   useEffect(() => {
     if (state.type === "success") {
+      router.push("/dashboard/product");
       toast({
         description: "Your Product was successfully added",
       });
-      router.push("/dashboard/product");
     }
   }, [state, toast, router]);
 
