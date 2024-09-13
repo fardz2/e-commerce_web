@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { columns } from "./_components/columns";
 import { DataTable } from "./_components/data-table";
-
+export const dynamic = "force-dynamic";
 export default async function Page() {
   const product = await getProduct();
   return (
